@@ -1,0 +1,40 @@
+<svg width="1400" height="420" viewBox="0 0 1400 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07111F"/>
+      <stop offset="0.5" stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="180" y1="60" x2="1050" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="0.5" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#34D399"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="420" fill="url(#bg)"/>
+  <circle cx="1180" cy="96" r="160" fill="#1D4ED8" fill-opacity="0.12"/>
+  <circle cx="1260" cy="280" r="180" fill="#A855F7" fill-opacity="0.10"/>
+
+  <g opacity="0.9">
+    <rect x="90" y="80" width="220" height="220" rx="26" fill="#0B1120" stroke="url(#accent)" stroke-width="2"/>
+    <path d="M150 240L208 140L266 240H229L208 204L187 240H150Z" fill="url(#accent)" filter="url(#glow)"/>
+    <path d="M192 185H224V208H192V185Z" fill="#E2E8F0"/>
+    <path d="M150 112H266" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+    <path d="M150 120H210" stroke="#5EEAD4" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+  </g>
+
+  <g>
+    <text x="370" y="170" fill="#F8FAFC" font-family="Verdana, Arial, sans-serif" font-size="72" font-weight="700">Mini GPT-2</text>
+    <text x="372" y="232" fill="#A5F3FC" font-family="Verdana, Arial, sans-serif" font-size="28" font-weight="600">Decoder-only Transformer • PyTorch • Shakespeare</text>
+    <rect x="370" y="260" width="320" height="58" rx="29" fill="url(#accent)" fill-opacity="0.18" stroke="url(#accent)"/>
+    <text x="392" y="298" fill="#E2E8F0" font-family="Verdana, Arial, sans-serif" font-size="24" font-weight="600">Train • Generate • Learn</text>
+  </g>
+</svg>
