@@ -1,7 +1,7 @@
 # Mini GPT-2
 
 <p align="center">
-  <img src="assets/mini-gpt-banner.svg" alt="Mini GPT-2 banner" width="100%" />
+  <img src="data/mini-gpt-banner.svg" alt="Mini GPT-2 banner" width="100%" />
 </p>
 
 A compact GPT-style language model implemented in PyTorch from scratch. This project trains a decoder-only transformer on text data, uses Rotary Positional Embeddings (RoPE), Multi-Query Attention (MQA), and a lightweight training loop inspired by modern LLM architectures.
